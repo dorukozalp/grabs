@@ -2,31 +2,31 @@
     "pageTitle": "Grabs: Front-End Development Environment",
     "introduction": {
         "title": "<span>Grabs</span> Front-End Development Environment",
-        "subtitle": "Geliştirme ortamınız saniyeler içerisinde hazır",
+        "subtitle": "Your development environment is ready in seconds",
         "items": [
             {
                 "name": "Grunt",
                 "url": "http://gruntjs.com/",
-                "text": "Grunt eklentileri ile dilediğiniz görevi projenize ekleyebilirsiniz."
+                "text": "You can add every task to your project with Grunt plugins."
             }, {
                 "name": "Angular",
                 "url": "https://angularjs.org/",
-                "text": "Angular desteği ile anında projenizi geliştirmeye başlayabilirsiniz."
+                "text": "You can immmediately start developing your project with Angular support."
             }, {
                 "name": "Bower",
                 "url": "http://bower.io/",
-                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını çekebilirsiniz."
+                "text": "You can download 3rd party libraries with Bower."
             }, {
                 "name": "Stylus",
                 "url": "http://learnboost.github.io/stylus/",
-                "text": "Stylus dosyalarınızın CSS'e derlenmesini ve sıkıştırılmasını sağlayabilirsiniz."
+                "text": "You can compile and compress Stylus files to CSS files."
             }
         ]
     },
     "howToInstall": {
-        "title": "<span>Grabs</span> Nedir ? Nasıl Kurulur ?",
-        "subtitle": "Grabs, geliştirme ortamında ihtiyaç duyulan birçok özelliği bir arada sunan, bu özelliklere yenilerinin eklemenmesini kolaylaştıran, popüler kütüphanelerle projeye anında başlayabilmenizi ve hızlı geliştirme yapmanızı sağlar.",
-        "description": "Grabs için <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> ve <a href=\"http://gruntjs.com/\">Grunt</a> kurulu olmalıdır. Aşağıdaki adımları sırasıyla uyguladığınızda geliştirme ortamınız çalışır hale gelecektir.",
+        "title": "<span>Grabs</span> Getting started",
+        "subtitle": "Grabs is a development environment offering a combination of many features that are needed which simplify adding new features, start your project immediately and providing fast development with popular libraries. ",
+        "description": "In order to use Grabs, <a href=\"http://nodejs.org/\">Node.js</a>, <a href=\"https://www.npmjs.org/\">Npm</a> and <a href=\"http://gruntjs.com/\">Grunt</a> must be installed. By applying the steps down below your development environment will be ready to use.",
         "steps": [
             "git clone https://github.com/sercaneraslan/grabs.git",
             "cd grabs",
@@ -34,65 +34,65 @@
             "grunt bower:install",
             "grunt"
         ],
-        "thatsIt": "Evet, hepsi bu kadar."
+        "thatsIt": "Yes, that is all."
     },
     "skills": {
-        "title": "<span>Grabs</span> ile Neler Yapılabilir ?",
+        "title": "<span>Grabs</span> Features",
         "items": [
             {
                 "name": "GRUNT",
-                "text": "Grunt eklentileri ile dilediğiniz görevi projenize ekleyebilirsiniz. <strong>gruntfile.js</strong> dosyasından ayarlar değiştirilebilir."
+                "text": "Add every task with Grunt plugins. Configure every Grunt options with single config file.(<strong>gruntfile.js</strong>)"
             }, {
                 "name": "ANGULAR",
-                "text": "Proje içinde AngularJS kuruludur. HTML5 Push State desteği açıktır ve her isteğin <strong>index.html'e</strong> gitmesi için ayarlar yapılmıştır. <strong>app/config/ng-config.js</strong> dosyasından ayarlar değiştirilebilir."
+                "text": "Use of AngularJS. Use of HTML5 Push State is available and every request is handled at <strong>index.html</strong>. Configure every Grunt options with single config file.(<strong>app/js/config/ng-config.js</strong>)"
             }, {
                 "name": "BOWER",
-                "text": "Bower ile dışarı bağımlı olduğunuz kütüphanelerin dosyalarını otomatik olarak çekebilirsiniz. <strong>bower.json</strong> dosyasını düzenleyerek ve <strong>grunt bower:install</strong> komutunu kullanarak istediğiniz kütüphanelerin çekilmesini sağlayabilirsiniz. <strong>gruntfile.js</strong> dosyasındaki <strong>bower</strong> alanından grunt ayarları değiştirilebilir."
+                "text": "Download 3rd party libraries. Configure Bower options at <strong>bower.json</strong> and use <strong>grunt bower:install</strong> command to download libraries."
             }, {
                 "name": "STYLUS",
-                "text": "Stylus dosyalarınızın her kod değişiminde otomatik olarak CSS'e derlenmesini ve sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>stylus</strong> alanından ayarlar değiştirilebilir. İsterseniz <strong>LESS</strong> yada <strong>SASS</strong> kullanabilirsiniz."
+                "text": "Compile and compress Stylus files. Use of <strong>LESS</strong> or <strong>SASS</strong> is available."
             }, {
                 "name": "SPRITE",
-                "text": "<strong>app/img/sprite</strong> klasörü altındaki imajları <strong>sprite.png</strong> dosyasında sprite olarak birleştirir ve Stylus dosyalarında dosya isimleri ile pozisyon tanımlaya gerek kalmadan otomatik olarak kullabilmeyi sağlar.<br><br> <strong>app/img/sprite-retina</strong> altındaki imajları da <strong>sprite-retina.png</strong> dosyasında sprite olarak birleştirir ve ekstra bir işleme gerek kalmadan retina desteği olan cihazlarda retina'lı sprite'ı kullandırır. Diğer klasörler işlem görmeden otomatik olarak <strong>build</strong> klösörüne taşınır.<br><br> <strong>app/css/global.styl</strong> dosyasında örnek kullanım vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>sprite</strong> alanından ayarlar değiştirilebilir."
+                "text": "Combine images under <strong>app/img/sprite</strong> directory to <strong>sprite.png</strong> file as sprite and provides automatic use of image file inside Stylus files without defining positions. <br><br> Combine images under <strong>app/img/sprite-retina</strong> directory to <strong>sprite-retina.png</strong> file as sprite and use retina sprite for devices with retine support automatically. Other files are automacitally moved to <strong>build</strong> directory.<br><br>ex: <strong>app/css/global.styl</strong>"
             }, {
-                "name": "ŞABLON / TEMPLATE",
-                "text": "HTML'e şablon / template özelliği ekler. <strong>gruntfile.js</strong> dosyasındaki <strong>template</strong> alanından ayarlar değiştirilebilir."
+                "name": "TEMPLATE",
+                "text": "Use HTML templates features."
             }, {
-                "name": "GELİŞTİRME MODU",
-                "text": "Geliştirme modunda HTML, CSS ve JavaScript dosyaları sıkıştırılmazlar. CSS'ler ve JavaScript'ler ayrı ayrı dosyalardadır. İmajlar küçültülmez. <strong>grunt</strong> komutu ile geliştirme modu çalıştırılabilir."
+                "name": "DEVELOPMENT MODE",
+                "text": "Uncompressed HTML, CSS, JS and IMAGE files."
             }, {
-                "name": "YAYIN MODU",
-                "text": "Yayın modunda HTML, CSS ve JavaScript dosyaları sıkıştırılır. CSS'ler ve JavaScript'ler tek dosya olarak birleştirilir. İmajlar küçültülür. Dosyaların cache'lenmesi engellenir. <strong>grunt live</strong> komutu ile live modu çalıştırılabilir."
+                "name": "LIVE MODE",
+                "text": "Compressed HTML, CSS, JS and IMAGE files."
             }, {
                 "name": "JSHINT",
-                "text": "JSHint, JavaScript'lerinizin her kod değişiminde otomatik olarak kontrol edilmesi sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>jshint</strong> alanından ayarlar değiştirilebilir."
+                "text": "Validate JavaScript file with JSHint."
             }, {
-                "name": "KOD KARMAŞIKLIK RAPORU",
-                "text": "Proje içinde kullanılanılan JavaScript'lerin karmaşıklık raporunu oluşturur. <strong>gruntfile.js</strong> dosyasındaki <strong>plato</strong> alanından ayarlar değiştirilebilir. <strong>grunt report</strong> komutuyla raporu görüntüleyebilirsiniz."
+                "name": "CODE COMPLEXITY REPORT",
+                "text": "Generate code complexity report for JavaScript files. Use <strong>grunt report</strong> command."
             }, {
-                "name": "HTML SIKIŞTIRMA",
-                "text": "HTML dosyalarının sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>htmlmin</strong> alanından ayarlar değiştirilebilir."
+                "name": "COMPRESS HTML",
+                "text": "Compress HTML files."
             }, {
-                "name": "İMAJ SIKIŞTIRMA",
-                "text": "İmajların sıkıştırılmasını sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>imagemin</strong> alanından ayarlar değiştirilebilir."
+                "name": "COMPRESS IMAGE",
+                "text": "Compress IMAGE files."
             }, {
-                "name": "JAVASCRIPT SIKIŞTIRMA",
-                "text": "JavaScript'lerin sıkıştırılmasını sağlar. Ayrıca source map desteği vardır. <strong>gruntfile.js</strong> dosyasındaki <strong>uglify</strong> alanından ayarlar değiştirilebilir."
+                "name": "COMPRESS JAVASCRIPT",
+                "text": "Compress JavaScript files. Support for source map."
             }, {
-                "name": "BİLGİLENDİRME",
-                "text": "İşletim sistemi bazında bilgilendirme yapar. JavaScript hatalarını, konsolda oluşan hataları vb bildirim olarak gösterir. İstenilen görevler için bilgilendirmeler tanımlanabilir. <strong>gruntfile.js</strong> dosyasındaki <strong>notify_hooks</strong> alanından ayarlar değiştirilebilir."
+                "name": "NOTIFICATION",
+                "text": "Notify for JavaScript errors and other console errors based on OS. Define notifications for any task."
             }, {
                 "name": "CACHE",
-                "text": "Sıkıştırılan HTML, CSS, JavaScript ve imaj dosyalarının sonuna her seferinde tarihe göre değişen rakamlar ekler. Örneğin; <strong>app.min.1408295277445.css</strong>."
+                "text": "Cache compressed HTML, CSS, JavaScript and IMAGE files. (ex: <strong>app.min.1408295277445.css</strong>)"
             }, {
                 "name": "SERVER",
-                "text": "Server kullanma özelliği sağlar. <strong>gruntfile.js</strong> dosyasındaki <strong>connect</strong> alanından ayarlar değiştirilebilir."
+                "text": "Built-in server included."
             }, {
                 "name": "LIVERELOAD",
-                "text": "Herhangi bir HTML, CSS ya da JS dosyası değiştiğinde otomatik olarak tarayıcıdaki sayfayı yeniler. <strong>gruntfile.js</strong> dosyasındaki <strong>connect</strong> alanından ayarlar değiştirilebilir."
+                "text": "Refresh HTML, CSS, JS, and JSON files automatically."
             }, {
-                "name": "ÇOKLU DİL DESTEĞİ",
-                "text": "Projenize birden fazla dil seçeneği ekleyebilirsiniz. Örnek kullanım <strong>homepage</strong> sayfasında vardır."
+                "name": "MULTILANGUAGE SUPPORT",
+                "text": "Add multiple languages to your project. (ex: <strong>homepage</strong>)"
             }
         ]
     }
